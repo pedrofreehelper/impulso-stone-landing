@@ -48,20 +48,20 @@
   --radius: 1.25rem;
 
   /* Impulso Stone palette */
-  --background: oklch(0.18 0 0);            /* near #111111 */
+  --background: oklch(0.14 0.05 163);       /* verde floresta escuro */
   --foreground: oklch(0.97 0.01 95);        /* off-white #F5F5F5 */
-  --surface: oklch(0.22 0 0);               /* card surface */
-  --surface-2: oklch(0.27 0 0);
+  --surface: oklch(0.19 0.04 163);          /* card surface com tint verde */
+  --surface-2: oklch(0.24 0.04 161);
 
-  --card: oklch(0.22 0 0);
+  --card: oklch(0.19 0.04 163);
   --card-foreground: oklch(0.97 0.01 95);
-  --popover: oklch(0.22 0 0);
+  --popover: oklch(0.19 0.04 163);
   --popover-foreground: oklch(0.97 0.01 95);
 
-  --lime: oklch(0.78 0.21 155);             /* Stone green ~#2BCC7A */
-  --lime-bright: oklch(0.65 0.19 163);      /* Stone green deep ~#00A868 */
-  --green-deep: oklch(0.27 0.08 163);       /* very dark Stone green */
-  --lilac: oklch(0.72 0.14 195);            /* teal-slate, complementar */
+  --lime: oklch(0.88 0.23 121);             /* lime vibrante da marca ~#B8ED3E */
+  --lime-bright: oklch(0.80 0.24 130);      /* lime mais saturado */
+  --green-deep: oklch(0.22 0.07 163);       /* verde escuro seção CTA */
+  --lilac: oklch(0.72 0.14 290);            /* roxo/lavanda dos cursos */
 
   --primary: var(--lime);
   --primary-foreground: oklch(0.15 0.02 160);
@@ -77,15 +77,15 @@
   --input: oklch(1 0 0 / 12%);
   --ring: var(--lime);
 
-  --gradient-lime: linear-gradient(135deg, oklch(0.78 0.21 155) 0%, oklch(0.65 0.19 163) 100%);
-  --gradient-deep: radial-gradient(120% 80% at 20% 0%, oklch(0.27 0.08 163 / 0.55) 0%, transparent 60%),
-                    radial-gradient(80% 60% at 90% 100%, oklch(0.72 0.14 195 / 0.25) 0%, transparent 60%);
-  --shadow-lime: 0 20px 60px -20px oklch(0.78 0.21 155 / 0.45);
+  --gradient-lime: linear-gradient(135deg, oklch(0.88 0.23 121) 0%, oklch(0.80 0.24 130) 100%);
+  --gradient-deep: radial-gradient(120% 80% at 20% 0%, oklch(0.22 0.07 163 / 0.6) 0%, transparent 60%),
+                    radial-gradient(80% 60% at 90% 100%, oklch(0.72 0.14 290 / 0.25) 0%, transparent 60%);
+  --shadow-lime: 0 20px 60px -20px oklch(0.88 0.23 121 / 0.45);
   --shadow-soft: 0 30px 80px -30px oklch(0 0 0 / 0.7);
 }
 
 .dark {
-  --background: oklch(0.18 0 0);
+  --background: oklch(0.14 0.05 163);
   --foreground: oklch(0.97 0.01 95);
 }
 
