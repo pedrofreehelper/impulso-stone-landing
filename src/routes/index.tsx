@@ -26,7 +26,7 @@ function CTA({ children = "quero participar gratuitamente", className = "" }: { 
 function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
-      <div className="mx-auto mt-4 flex max-w-6xl items-center justify-between rounded-full border border-white/10 bg-[oklch(0.18_0_0/0.6)] px-5 py-3 backdrop-blur-xl md:px-6">
+      <div className="mx-auto mt-4 flex max-w-6xl items-center justify-between rounded-full border border-black/10 bg-background/80 px-5 py-3 backdrop-blur-xl shadow-sm md:px-6">
         <Logo />
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#voce" className="hover:text-foreground transition">isso é você?</a>
@@ -59,7 +59,7 @@ function Hero() {
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-12 md:gap-8 md:px-8">
         <div className="md:col-span-7 animate-fade-up">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
+          <span className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/5 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
             <Sparkles className="h-3.5 w-3.5 text-lime" /> programa gratuito • inscrições abertas
           </span>
           <h1 className="display mt-6 text-balance text-5xl text-foreground sm:text-6xl md:text-[5.5rem]">
@@ -80,7 +80,7 @@ function Hero() {
         <div className="relative md:col-span-5">
           <div className="absolute -left-6 -top-6 h-40 w-40 rounded-full bg-lime/80 blur-2xl" />
           <div className="absolute -right-8 bottom-10 h-48 w-48 rounded-full bg-lilac/60 blur-2xl" />
-          <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 shadow-soft">
+          <div className="relative overflow-hidden rounded-[2.5rem] border border-black/8 shadow-soft">
             <img
               src={heroImg}
               alt="Confeiteira sorrindo enquanto decora um bolo artesanal em sua cozinha"
@@ -90,7 +90,7 @@ function Hero() {
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-background/40 via-transparent to-transparent" />
           </div>
-          <div className="absolute -bottom-6 left-6 flex items-center gap-3 rounded-full border border-white/10 bg-surface/90 px-5 py-3 backdrop-blur">
+          <div className="absolute -bottom-6 left-6 flex items-center gap-3 rounded-full border border-black/10 bg-background/95 px-5 py-3 backdrop-blur shadow-sm">
             <div className="flex -space-x-2">
               {[depo1, depo2, depo3].map((s, i) => (
                 <img key={i} src={s} alt="" className="h-8 w-8 rounded-full border-2 border-surface object-cover" />
@@ -124,7 +124,7 @@ function PainSection() {
         <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {painPoints.map((p, i) => (
             <Reveal key={p} delay={i * 80}>
-              <div className="group h-full rounded-3xl border border-white/10 bg-surface p-7 transition hover:border-lime/40 hover:bg-surface-2">
+              <div className="group h-full rounded-3xl border border-black/8 bg-surface p-7 transition hover:border-lime/40 hover:bg-surface-2">
                 <div className="mb-6 inline-flex h-10 w-10 items-center justify-center rounded-full bg-lime/10 text-lime transition group-hover:bg-lime group-hover:text-[oklch(0.18_0_0)]">
                   <Heart className="h-5 w-5" />
                 </div>
@@ -175,7 +175,7 @@ function NoOneTaught() {
         <div className="mt-14 flex flex-wrap justify-center gap-3">
           {skills.map(({ icon: Icon, label }, i) => (
             <Reveal key={label} delay={i * 70}>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-surface px-5 py-3 text-sm text-foreground transition hover:border-lime/50 hover:bg-surface-2 md:text-base">
+              <div className="inline-flex items-center gap-2 rounded-full border border-black/8 bg-surface px-5 py-3 text-sm text-foreground transition hover:border-lime/50 hover:bg-surface-2 md:text-base">
                 <Icon className="h-4 w-4 text-lime" />
                 {label}
               </div>
@@ -262,7 +262,7 @@ function TransformSection() {
           {transforms.map((t, i) => (
             <Reveal key={t.before} delay={i * 100}>
               <div className="grid grid-cols-1 items-stretch gap-3 md:grid-cols-[1fr_auto_1fr]">
-                <div className="rounded-3xl border border-white/10 bg-surface p-7">
+                <div className="rounded-3xl border border-black/8 bg-surface p-7">
                   <span className="text-xs uppercase tracking-widest text-muted-foreground">antes</span>
                   <p className="mt-3 text-2xl text-foreground/70 md:text-3xl">"{t.before}"</p>
                 </div>
@@ -310,7 +310,7 @@ function SocialProof() {
                 { n: "+1M", l: "horas de conteúdo" },
                 { n: "98%", l: "recomendam" },
               ].map((s) => (
-                <div key={s.l} className="rounded-2xl border border-white/10 bg-surface p-4 text-center">
+                <div key={s.l} className="rounded-2xl border border-black/8 bg-surface p-4 text-center">
                   <div className="display text-3xl text-lime md:text-4xl">{s.n}</div>
                   <div className="mt-1 text-xs text-muted-foreground">{s.l}</div>
                 </div>
@@ -322,7 +322,7 @@ function SocialProof() {
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 100}>
-              <figure className="group h-full overflow-hidden rounded-3xl border border-white/10 bg-surface transition hover:border-lime/40">
+              <figure className="group h-full overflow-hidden rounded-3xl border border-black/8 bg-surface transition hover:border-lime/40">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img src={t.img} alt={t.name} loading="lazy" width={640} height={480} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
@@ -349,7 +349,7 @@ function FinalCTA() {
     <section className="relative overflow-hidden py-24 md:py-32">
       <div className="mx-auto max-w-5xl px-6 md:px-8">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-deep p-10 text-center md:p-16">
+          <div className="relative overflow-hidden rounded-[2.5rem] border border-black/8 bg-deep p-10 text-center md:p-16">
             <div className="blob left-[-10%] top-[-20%] h-[400px] w-[400px] bg-lime animate-float-slow" />
             <div className="blob right-[-10%] bottom-[-30%] h-[400px] w-[400px] bg-lilac animate-float-slow" style={{ animationDelay: "-5s" }} />
             <div className="relative">
