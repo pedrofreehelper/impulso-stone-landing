@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Check, Heart, Sparkles, Users, Wallet, Megaphone, Calculator, Instagram } from "lucide-react";
 import heroImg from "@/assets/hero-confeiteira.jpg";
 import bgKitchen from "@/assets/bg-kitchen-blur.jpg";
@@ -9,23 +8,6 @@ import { Logo } from "@/components/Logo";
 import { Reveal } from "@/components/Reveal";
 
 const FORM_URL = "https://impulso.stone.com.br/";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Impulso Stone — para quem vende doces, bolos e sobremesas" },
-      {
-        name: "description",
-        content:
-          "Programa gratuito que ajuda confeiteiras e pequenos empreendedores a organizar preço, vendas e divulgação de um jeito simples e humano.",
-      },
-      { property: "og:title", content: "Impulso Stone — apoio real para quem empreende com doces" },
-      { property: "og:description", content: "Inscreva-se gratuitamente no Impulso Stone." },
-      { property: "og:type", content: "website" },
-    ],
-  }),
-  component: Landing,
-});
 
 function CTA({ children = "quero participar gratuitamente", className = "" }: { children?: React.ReactNode; className?: string }) {
   return (
@@ -407,7 +389,7 @@ function Footer() {
   );
 }
 
-function Landing() {
+export default function Landing() {
   return (
     <main className="relative">
       <Navbar />
