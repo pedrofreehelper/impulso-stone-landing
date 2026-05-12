@@ -58,10 +58,11 @@
   --popover: oklch(0.98 0.005 120);
   --popover-foreground: oklch(0.16 0.06 163);
 
-  --lime: oklch(0.88 0.23 121);             /* lime vibrante da marca ~#B8ED3E */
+  --lime: oklch(0.88 0.23 121);             /* lime vibrante da marca ~#B8ED3E — botões e fundos */
   --lime-bright: oklch(0.80 0.24 130);      /* lime mais saturado */
   --green-deep: oklch(0.87 0.12 128);       /* fundo lime claro seção CTA */
   --lilac: oklch(0.60 0.16 290);            /* roxo mais rico no claro */
+  --green-text: oklch(0.32 0.13 155);       /* verde escuro pra texto em fundo claro */
 
   --primary: var(--lime);
   --primary-foreground: oklch(0.15 0.06 163);
@@ -114,6 +115,7 @@
 
   .bg-lime { background-color: var(--lime); }
   .text-lime { color: var(--lime); }
+  .text-green { color: var(--green-text); }   /* verde escuro legível em fundo claro */
   .bg-lilac { background-color: var(--lilac); }
   .text-lilac { color: var(--lilac); }
   .bg-deep { background-color: var(--green-deep); }

@@ -65,7 +65,7 @@ function Hero() {
           <h1 className="display mt-6 text-balance text-5xl text-foreground sm:text-6xl md:text-[5.5rem]">
             você vende bolo todo dia.
             <br />
-            <span className="text-lime">e no fim do mês</span> parece que não valeu a pena?
+            <span className="text-green">e no fim do mês</span> parece que não valeu a pena?
           </h1>
           <p className="mt-8 max-w-xl text-pretty text-lg text-muted-foreground md:text-xl">
             o Impulso Stone ajuda quem vende doces, bolos e sobremesas a organizar preço,
@@ -118,7 +118,7 @@ function PainSection() {
       <div className="mx-auto max-w-6xl px-6 md:px-8">
         <Reveal>
           <h2 className="display max-w-3xl text-balance text-4xl text-foreground sm:text-5xl md:text-6xl">
-            isso parece <span className="text-lime">com você?</span>
+            isso parece <span className="text-green">com você?</span>
           </h2>
         </Reveal>
         <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -161,7 +161,7 @@ function NoOneTaught() {
       <div className="mx-auto max-w-5xl px-6 text-center md:px-8">
         <Reveal>
           <h2 className="display text-balance text-4xl text-foreground sm:text-5xl md:text-6xl">
-            você aprendeu a <span className="text-lime">fazer doces.</span>
+            você aprendeu a <span className="text-green">fazer doces.</span>
             <br />
             mas ninguém ensinou como transformar isso num negócio.
           </h2>
@@ -203,7 +203,7 @@ function ProgramSection() {
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <Reveal>
             <h2 className="display max-w-2xl text-balance text-4xl text-foreground sm:text-5xl md:text-6xl">
-              um programa feito <span className="text-lime">pra quem faz</span> com as mãos.
+              um programa feito <span className="text-green">pra quem faz</span> com as mãos.
             </h2>
           </Reveal>
           <Reveal delay={120}>
@@ -226,7 +226,7 @@ function ProgramSection() {
                   }`}
                 >
                   <div className={`absolute -right-12 -top-12 h-40 w-40 rounded-full blur-3xl opacity-30 transition-opacity group-hover:opacity-60 ${isLime ? "bg-lime" : "bg-lilac"}`} />
-                  <span className={`relative inline-flex rounded-full px-3 py-1 text-xs font-medium ${isLime ? "bg-lime/15 text-lime" : "bg-lilac/15 text-lilac"}`}>
+                  <span className={`relative inline-flex rounded-full px-3 py-1 text-xs font-medium ${isLime ? "bg-lime/20 text-green" : "bg-lilac/20 text-lilac"}`}>
                     {item.tag}
                   </span>
                   <h3 className="relative mt-5 text-balance text-2xl font-semibold text-foreground">
@@ -255,7 +255,7 @@ function TransformSection() {
       <div className="mx-auto max-w-6xl px-6 md:px-8">
         <Reveal>
           <h2 className="display max-w-3xl text-balance text-4xl text-foreground sm:text-5xl md:text-6xl">
-            o que muda <span className="text-lime">de verdade.</span>
+            o que muda <span className="text-green">de verdade.</span>
           </h2>
         </Reveal>
         <div className="mt-14 space-y-5">
@@ -272,7 +272,7 @@ function TransformSection() {
                   </div>
                 </div>
                 <div className="rounded-3xl border border-lime/30 bg-lime/10 p-7">
-                  <span className="text-xs uppercase tracking-widest text-lime">depois</span>
+                  <span className="text-xs uppercase tracking-widest text-green">depois</span>
                   <p className="mt-3 text-2xl text-foreground md:text-3xl">"{t.after}"</p>
                 </div>
               </div>
@@ -299,7 +299,7 @@ function SocialProof() {
         <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-12">
           <Reveal className="md:col-span-7">
             <h2 className="display text-balance text-4xl text-foreground sm:text-5xl md:text-6xl">
-              <span className="text-lime">+10 mil</span> empreendedores
+              <span className="text-green">+10 mil</span> empreendedores
               <br />já caminham com a gente.
             </h2>
           </Reveal>
@@ -311,7 +311,7 @@ function SocialProof() {
                 { n: "98%", l: "recomendam" },
               ].map((s) => (
                 <div key={s.l} className="rounded-2xl border border-black/8 bg-surface p-4 text-center">
-                  <div className="display text-3xl text-lime md:text-4xl">{s.n}</div>
+                  <div className="display text-3xl text-green md:text-4xl">{s.n}</div>
                   <div className="mt-1 text-xs text-muted-foreground">{s.l}</div>
                 </div>
               ))}
@@ -354,7 +354,7 @@ function FinalCTA() {
             <div className="blob right-[-10%] bottom-[-30%] h-[400px] w-[400px] bg-lilac animate-float-slow" style={{ animationDelay: "-5s" }} />
             <div className="relative">
               <h2 className="display mx-auto max-w-3xl text-balance text-4xl text-foreground sm:text-5xl md:text-6xl">
-                talvez o problema <span className="text-lime">não seja esforço.</span>
+                talvez o problema <span className="text-green">não seja esforço.</span>
                 <br />talvez falte direção.
               </h2>
               <p className="mx-auto mt-6 max-w-xl text-pretty text-lg text-muted-foreground">
