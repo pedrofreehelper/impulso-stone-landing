@@ -88,10 +88,8 @@ function Hero() {
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-background/40 via-transparent to-transparent" />
           </div>
           <div className="absolute -bottom-6 left-6 flex items-center gap-3 rounded-full border border-black/10 bg-background/95 px-5 py-3 backdrop-blur shadow-sm">
-            <div className="flex -space-x-2">
-              {[depo1, depo2, depo3].map((s, i) => (
-                <img key={i} src={s} alt="" className="h-8 w-8 rounded-full border-2 border-surface object-cover" />
-              ))}
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-lime">
+              <Users className="h-4 w-4 text-[oklch(0.16_0.06_163)]" />
             </div>
             <span className="text-sm text-foreground">+10 mil empreendedores</span>
           </div>
