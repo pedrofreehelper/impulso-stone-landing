@@ -1,5 +1,5 @@
 import { ArrowRight, Check, Heart, Sparkles, Users, Wallet, Megaphone, Calculator, Instagram } from "lucide-react";
-import heroImg from "@/assets/hero-confeiteira.jpg";
+import heroImg from "@/assets/chef-ruth.jpg";
 import bgKitchen from "@/assets/bg-kitchen-blur.jpg";
 import { Logo } from "@/components/Logo";
 import { Reveal } from "@/components/Reveal";
@@ -80,7 +80,7 @@ function Hero() {
           <div className="relative overflow-hidden rounded-[2.5rem] border border-black/8 shadow-soft">
             <img
               src={heroImg}
-              alt="Confeiteira sorrindo enquanto decora um bolo artesanal em sua cozinha"
+              alt="Chef Ruth, parceira do programa Impulso Stone"
               width={1280}
               height={1280}
               className="h-full w-full object-cover"
