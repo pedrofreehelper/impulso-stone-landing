@@ -115,7 +115,7 @@
 
   .bg-lime { background-color: var(--lime); }
   .text-lime { color: var(--lime); }
-  .text-green { color: var(--green-text); }   /* verde escuro legível em fundo claro */
+  .text-brand { color: var(--green-text); }    /* verde escuro legível em fundo claro */
   .bg-lilac { background-color: var(--lilac); }
   .text-lilac { color: var(--lilac); }
   .bg-deep { background-color: var(--green-deep); }
