@@ -86,6 +86,10 @@ function Hero() {
               className="h-full w-full object-cover"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-background/40 via-transparent to-transparent" />
+            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent px-6 py-5">
+              <p className="text-sm font-semibold text-white">Chef Ruth</p>
+              <p className="text-xs text-white/80">empreendedora e embaixadora Impulso Stone</p>
+            </div>
           </div>
           <div className="absolute -bottom-6 left-6 flex items-center gap-3 rounded-full border border-black/10 bg-background/95 px-5 py-3 backdrop-blur shadow-sm">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-lime">
