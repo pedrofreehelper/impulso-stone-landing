@@ -1,13 +1,10 @@
 import { ArrowRight, Check, Heart, Sparkles, Users, Wallet, Megaphone, Calculator, Instagram } from "lucide-react";
 import heroImg from "@/assets/hero-confeiteira.jpg";
 import bgKitchen from "@/assets/bg-kitchen-blur.jpg";
-import depo1 from "@/assets/depo-1.jpg";
-import depo2 from "@/assets/depo-2.jpg";
-import depo3 from "@/assets/depo-3.jpg";
 import { Logo } from "@/components/Logo";
 import { Reveal } from "@/components/Reveal";
 
-const FORM_URL = "https://impulso.stone.com.br/";
+const FORM_URL = "https://comunidade.impulsostone.com.br/stone/register";
 
 function CTA({ children = "quero participar gratuitamente", className = "" }: { children?: React.ReactNode; className?: string }) {
   return (
@@ -284,12 +281,10 @@ function TransformSection() {
   );
 }
 
-// TODO: substituir img e os dados abaixo pelas fotos e depoimentos reais dos empreendedores.
-// Coloque as fotos em src/assets/ e importe no topo do arquivo (ex: import fotoAna from "@/assets/ana.jpg").
 const testimonials = [
-  { name: "Camila, 32", city: "Recife", img: depo1, quote: "comecei vendendo brigadeiro pros vizinhos. hoje entendo meu preço e meu lucro." },
-  { name: "Fernanda, 41", city: "Belo Horizonte", img: depo2, quote: "achei que era só eu que se sentia perdida. o Impulso Stone me deu calma e direção." },
-  { name: "Larissa, 28", city: "São Paulo", img: depo3, quote: "aprendi a postar de um jeito que as pessoas realmente respondem. dobrei pedidos." },
+  { name: "Ivana Alves", role: "Empreendedora", quote: "Estou em constante aprendizado e ter uma plataforma gratuita com conteúdos estratégicos para o nosso crescimento é fantástico." },
+  { name: "Empreendedora Impulso", role: "", quote: "Os conteúdos são autênticos e super esclarecedores, atividades lógicas e diretas para o dia a dia de uma boa gestão financeira." },
+  { name: "Natalia Teles", role: "Empreendedora", quote: "O Impulso Stone ajudando a sair da crise, onde muitos fecham as portas a Stone abre." },
 ];
 
 function SocialProof() {
@@ -307,8 +302,7 @@ function SocialProof() {
             <div className="grid grid-cols-3 gap-4 md:gap-6">
               {[
                 { n: "+10k", l: "empreendedores" },
-                { n: "+1M", l: "horas de conteúdo" },
-                { n: "98%", l: "recomendam" },
+                { n: "+40h", l: "horas de conteúdo" },
               ].map((s) => (
                 <div key={s.l} className="rounded-2xl border border-black/8 bg-surface p-4 text-center">
                   <div className="display text-3xl text-green md:text-4xl">{s.n}</div>
@@ -322,17 +316,15 @@ function SocialProof() {
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 100}>
-              <figure className="group h-full overflow-hidden rounded-3xl border border-black/8 bg-surface transition hover:border-lime/40">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img src={t.img} alt={t.name} loading="lazy" width={640} height={480} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
-                </div>
-                <figcaption className="p-7">
-                  <p className="text-pretty text-lg text-foreground">"{t.quote}"</p>
-                  <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
-                    <span className="font-medium text-foreground">{t.name}</span>
-                    <span>·</span>
-                    <span>{t.city}</span>
+              <figure className="group flex h-full flex-col justify-between rounded-3xl border border-black/8 bg-surface p-8 transition hover:border-lime/40">
+                <p className="text-pretty text-lg leading-relaxed text-foreground">"{t.quote}"</p>
+                <figcaption className="mt-6 flex items-center gap-3 border-t border-black/8 pt-5">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-lime text-sm font-bold text-[oklch(0.16_0.06_163)]">
+                    {t.name.charAt(0)}
+                  </div>
+                  <div>
+                    <div className="font-semibold text-foreground">{t.name}</div>
+                    {t.role && <div className="text-xs text-muted-foreground">{t.role}</div>}
                   </div>
                 </figcaption>
               </figure>
