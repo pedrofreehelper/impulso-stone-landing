@@ -12,7 +12,7 @@ import depoAndressa from "@/assets/depo-andressa.jpg";
 import { Logo } from "@/components/Logo";
 import { Reveal } from "@/components/Reveal";
 
-const FORM_URL = "https://comunidade.impulsostone.com.br/stone/register";
+const FORM_URL = "https://comunidade.impulsostone.com.br/stone/register?utm_source=lp-doces&utm_medium=site&utm_campaign=impulso-stone";
 
 function CTA({ children = "quero participar gratuitamente", className = "" }: { children?: React.ReactNode; className?: string }) {
   return (
