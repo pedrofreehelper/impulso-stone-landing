@@ -398,21 +398,21 @@ function SocialProof() {
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 100}>
-              <figure className="group flex h-full flex-col justify-between rounded-3xl border border-black/8 bg-surface p-8 transition hover:border-lime/40">
-                <p className="text-pretty text-lg leading-relaxed text-foreground">"{t.quote}"</p>
-                <figcaption className="mt-6 flex items-center gap-3 border-t border-black/8 pt-5">
+              <figure className="group flex h-full flex-col rounded-3xl border border-black/8 bg-surface p-8 transition hover:border-lime/40">
+                <figcaption className="mb-6 flex items-center gap-4">
                   {t.img ? (
-                    <img src={t.img} alt={t.name} className="h-10 w-10 shrink-0 rounded-full object-cover" />
+                    <img src={t.img} alt={t.name} className="h-20 w-20 shrink-0 rounded-2xl object-cover shadow-sm" />
                   ) : (
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lime text-sm font-bold text-[oklch(0.16_0.06_163)]">
+                    <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-lime text-2xl font-bold text-[oklch(0.16_0.06_163)]">
                       {t.name.charAt(0)}
                     </div>
                   )}
                   <div>
                     <div className="font-semibold text-foreground">{t.name}</div>
-                    {t.role && <div className="text-xs text-muted-foreground">{t.role}</div>}
+                    {t.role && <div className="mt-0.5 text-sm text-muted-foreground">{t.role}</div>}
                   </div>
                 </figcaption>
+                <p className="text-pretty text-lg leading-relaxed text-foreground">"{t.quote}"</p>
               </figure>
             </Reveal>
           ))}
