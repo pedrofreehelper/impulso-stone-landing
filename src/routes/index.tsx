@@ -2,6 +2,10 @@ import { ArrowRight, Check, Heart, Sparkles, Users, Wallet, Megaphone, Calculato
 import heroImg from "@/assets/chef-ruth.jpg";
 import chefRuthImg from "@/assets/chef-ruth.jpg";
 import bgKitchen from "@/assets/bg-kitchen-blur.jpg";
+import depoCristiele from "@/assets/depo-cristiele.jpg";
+import depoRaiane from "@/assets/depo-raiane.jpg";
+import depoAdriana from "@/assets/depo-adriana.jpg";
+import depoAndressa from "@/assets/depo-andressa.jpg";
 import { Logo } from "@/components/Logo";
 import { Reveal } from "@/components/Reveal";
 
@@ -359,10 +363,10 @@ function TransformSection() {
 }
 
 const testimonials = [
-  { name: "Cristiele Dias", role: "Taty Festas", quote: "Com o Impulso Stone, aprendi a organizar e dirigir meu negócio de uma maneira mais ampla e segura.", img: null as string | null },
-  { name: "Raiane Nascimento Soares", role: "Pudim Ray", quote: "As parcerias, como a SPM-RJ e o Impulso Stone, têm sido fundamentais nesse caminho, pois me proporcionam oportunidades, conhecimento e conexões que fortalecem meu negócio.", img: null as string | null },
-  { name: "Adriana Araújo", role: "Estação Gourmet", quote: "A Rede Muda Mundo e a plataforma Impulso Stone tiveram um papel muito importante na minha caminhada como empreendedora.", img: null as string | null },
-  { name: "Andressa Bernardo", role: "Andressa Bernardo Confeitaria", quote: "O crescimento do negócio também é impulsionado pela busca constante por conhecimento.", img: null as string | null },
+  { name: "Cristiele Dias", role: "Taty Festas", quote: "Com o Impulso Stone, aprendi a organizar e dirigir meu negócio de uma maneira mais ampla e segura.", img: depoCristiele },
+  { name: "Raiane Nascimento Soares", role: "Pudim Ray", quote: "As parcerias, como a SPM-RJ e o Impulso Stone, têm sido fundamentais nesse caminho, pois me proporcionam oportunidades, conhecimento e conexões que fortalecem meu negócio.", img: depoRaiane },
+  { name: "Adriana Araújo", role: "Estação Gourmet", quote: "A Rede Muda Mundo e a plataforma Impulso Stone tiveram um papel muito importante na minha caminhada como empreendedora.", img: depoAdriana },
+  { name: "Andressa Bernardo", role: "Andressa Bernardo Confeitaria", quote: "O crescimento do negócio também é impulsionado pela busca constante por conhecimento.", img: depoAndressa },
 ];
 
 function SocialProof() {
