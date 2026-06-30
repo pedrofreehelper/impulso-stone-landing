@@ -210,7 +210,7 @@ function ProgramSection() {
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <Reveal>
             <h2 className="display max-w-2xl text-balance text-4xl text-foreground sm:text-5xl md:text-6xl">
-              um programa feito <span className="text-brand">pra quem faz</span> com as mãos.
+              um programa feito <span className="text-brand">para quem põe</span> a mão na massa.
             </h2>
           </Reveal>
           <Reveal delay={120}>
@@ -423,9 +423,9 @@ function SocialProof() {
               <figure className="group flex h-full flex-col rounded-3xl border border-black/8 bg-surface p-8 transition hover:border-lime/40">
                 <figcaption className="mb-6 flex items-center gap-4">
                   {t.img ? (
-                    <img src={t.img} alt={t.name} className="h-20 w-20 shrink-0 rounded-2xl object-cover object-top shadow-sm" />
+                    <img src={t.img} alt={t.name} className="h-28 w-28 shrink-0 rounded-2xl object-cover object-top shadow-sm" />
                   ) : (
-                    <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-lime text-2xl font-bold text-[oklch(0.16_0.06_163)]">
+                    <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-2xl bg-lime text-2xl font-bold text-[oklch(0.16_0.06_163)]">
                       {t.name.charAt(0)}
                     </div>
                   )}
