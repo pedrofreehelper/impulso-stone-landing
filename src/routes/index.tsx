@@ -2,6 +2,9 @@ import { ArrowRight, Check, Heart, Sparkles, Users, Wallet, Megaphone, Calculato
 import heroImg from "@/assets/chef-ruth.jpg";
 import chefRuthImg from "@/assets/chef-ruth.jpg";
 import bgKitchen from "@/assets/bg-kitchen-blur.jpg";
+import rmmLogo from "@/assets/rmm-logo.jpg";
+import ipLogo from "@/assets/ip-logo.jpg";
+import spmLogo from "@/assets/spm-logo.png";
 import depoCristiele from "@/assets/depo-cristiele.jpg";
 import depoRaiane from "@/assets/depo-raiane.jpg";
 import depoAdriana from "@/assets/depo-adriana.jpg";
@@ -321,6 +324,25 @@ function LeadCaptureSection() {
   );
 }
 
+function PartnersSection() {
+  return (
+    <section className="py-14 md:py-16">
+      <div className="mx-auto max-w-6xl px-6 md:px-8">
+        <Reveal>
+          <p className="mb-10 text-center text-sm uppercase tracking-widest text-muted-foreground">
+            parceiros do programa
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+            <img src={rmmLogo} alt="Rede Muda Mundo" className="h-12 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0" />
+            <img src={ipLogo} alt="Instituto da Providência" className="h-12 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0" />
+            <img src={spmLogo} alt="SPM Rio de Janeiro" className="h-12 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0" />
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 const transforms = [
   { before: "vendia no improviso", after: "comecei a entender meu negócio" },
   { before: "trabalhava muito e sobrava pouco", after: "aprendi a me organizar melhor" },
@@ -478,6 +500,7 @@ export default function Landing() {
       <ChefRuthSection />
       <TransformSection />
       <LeadCaptureSection />
+      <PartnersSection />
       <SocialProof />
       <FinalCTA />
       <Footer />
