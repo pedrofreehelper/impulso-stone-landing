@@ -1,5 +1,6 @@
 import { ArrowRight, Check, Heart, Sparkles, Users, Wallet, Megaphone, Calculator, Instagram } from "lucide-react";
 import heroImg from "@/assets/chef-ruth.jpg";
+import chefRuthImg from "@/assets/chef-ruth.jpg";
 import bgKitchen from "@/assets/bg-kitchen-blur.jpg";
 import { Logo } from "@/components/Logo";
 import { Reveal } from "@/components/Reveal";
@@ -242,6 +243,80 @@ function ProgramSection() {
   );
 }
 
+function ChefRuthSection() {
+  return (
+    <section className="relative py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6 md:px-8">
+        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
+          <Reveal>
+            <div className="relative overflow-hidden rounded-[2.5rem] border border-black/8 shadow-soft">
+              <img
+                src={chefRuthImg}
+                alt="Chef Ruth, embaixadora Impulso Stone"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent px-6 py-5">
+                <p className="text-sm font-semibold text-white">Chef Ruth</p>
+                <p className="text-xs text-white/80">empreendedora e embaixadora Impulso Stone</p>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={150}>
+            <span className="inline-flex items-center gap-2 rounded-full bg-lime/20 px-4 py-1.5 text-xs font-medium text-brand">
+              parceria Impulso Stone
+            </span>
+            <h2 className="display mt-5 text-balance text-4xl text-foreground sm:text-5xl">
+              uma chef que conhece<br />
+              <span className="text-brand">cada dificuldade</span> do caminho.
+            </h2>
+            <p className="mt-6 text-pretty text-lg text-muted-foreground">
+              A Chef Ruth é empreendedora, cozinheira e embaixadora do Impulso Stone. Ela viveu na pele os desafios de transformar talento em negócio — e hoje usa sua história para inspirar outras mulheres que vendem com as mãos.
+            </p>
+            <p className="mt-4 text-pretty text-muted-foreground">
+              Essa parceria nasceu da crença de que quem já passou pelo caminho tem muito a ensinar. A Ruth traz autenticidade, experiência real e proximidade com quem está começando.
+            </p>
+            <div className="mt-8">
+              <CTA>quero fazer parte</CTA>
+            </div>
+          </Reveal>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LeadCaptureSection() {
+  return (
+    <section className="relative overflow-hidden py-20 md:py-24">
+      <div className="mx-auto max-w-6xl px-6 md:px-8">
+        <Reveal>
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-lime px-10 py-14 md:px-16 md:py-16">
+            <div className="blob -z-10 right-[-5%] top-[-30%] h-[300px] w-[300px] bg-lime-bright animate-float-slow opacity-40" />
+            <div className="relative grid grid-cols-1 items-center gap-8 md:grid-cols-[1fr_auto]">
+              <div>
+                <h2 className="display text-balance text-3xl text-[oklch(0.16_0.06_163)] sm:text-4xl md:text-5xl">
+                  anuncie seus doces para a comunidade do Impulso Stone.
+                </h2>
+                <p className="mt-4 max-w-xl text-pretty text-[oklch(0.16_0.06_163)]/70 md:text-lg">
+                  mais de 10 mil empreendedores podem conhecer o seu negócio. entre gratuitamente e apareça para quem já quer comprar.
+                </p>
+              </div>
+              <a
+                href={FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[oklch(0.16_0.06_163)] px-7 py-4 text-base font-semibold text-white transition hover:scale-[1.02] hover:opacity-90"
+              >
+                quero aparecer <ArrowRight className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 const transforms = [
   { before: "vendia no improviso", after: "comecei a entender meu negócio" },
   { before: "trabalhava muito e sobrava pouco", after: "aprendi a me organizar melhor" },
@@ -284,9 +359,10 @@ function TransformSection() {
 }
 
 const testimonials = [
-  { name: "Ivana Alves", role: "Empreendedora", quote: "Estou em constante aprendizado e ter uma plataforma gratuita com conteúdos estratégicos para o nosso crescimento é fantástico." },
-  { name: "Empreendedora Impulso", role: "", quote: "Os conteúdos são autênticos e super esclarecedores, atividades lógicas e diretas para o dia a dia de uma boa gestão financeira." },
-  { name: "Natalia Teles", role: "Empreendedora", quote: "O Impulso Stone ajudando a sair da crise, onde muitos fecham as portas a Stone abre." },
+  { name: "Cristiele Dias", role: "Taty Festas", quote: "Com o Impulso Stone, aprendi a organizar e dirigir meu negócio de uma maneira mais ampla e segura.", img: null as string | null },
+  { name: "Raiane Nascimento Soares", role: "Pudim Ray", quote: "As parcerias, como a SPM-RJ e o Impulso Stone, têm sido fundamentais nesse caminho, pois me proporcionam oportunidades, conhecimento e conexões que fortalecem meu negócio.", img: null as string | null },
+  { name: "Adriana Araújo", role: "Estação Gourmet", quote: "A Rede Muda Mundo e a plataforma Impulso Stone tiveram um papel muito importante na minha caminhada como empreendedora.", img: null as string | null },
+  { name: "Andressa Bernardo", role: "Andressa Bernardo Confeitaria", quote: "O crescimento do negócio também é impulsionado pela busca constante por conhecimento.", img: null as string | null },
 ];
 
 function SocialProof() {
@@ -315,15 +391,19 @@ function SocialProof() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 100}>
               <figure className="group flex h-full flex-col justify-between rounded-3xl border border-black/8 bg-surface p-8 transition hover:border-lime/40">
                 <p className="text-pretty text-lg leading-relaxed text-foreground">"{t.quote}"</p>
                 <figcaption className="mt-6 flex items-center gap-3 border-t border-black/8 pt-5">
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-lime text-sm font-bold text-[oklch(0.16_0.06_163)]">
-                    {t.name.charAt(0)}
-                  </div>
+                  {t.img ? (
+                    <img src={t.img} alt={t.name} className="h-10 w-10 shrink-0 rounded-full object-cover" />
+                  ) : (
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-lime text-sm font-bold text-[oklch(0.16_0.06_163)]">
+                      {t.name.charAt(0)}
+                    </div>
+                  )}
                   <div>
                     <div className="font-semibold text-foreground">{t.name}</div>
                     {t.role && <div className="text-xs text-muted-foreground">{t.role}</div>}
@@ -391,7 +471,9 @@ export default function Landing() {
       <PainSection />
       <NoOneTaught />
       <ProgramSection />
+      <ChefRuthSection />
       <TransformSection />
+      <LeadCaptureSection />
       <SocialProof />
       <FinalCTA />
       <Footer />
