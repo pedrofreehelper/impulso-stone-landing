@@ -116,7 +116,7 @@ const painPoints = [
   "o dinheiro do negócio e da vida pessoal virou tudo uma coisa só",
   "você calcula preço meio no sentimento",
   "posta todo dia e parece que ninguém vê",
-  "faz tudo sozinha — e tá cansada disso",
+  "faz tudo sozinha e tá cansada disso",
 ];
 
 function PainSection() {
@@ -215,7 +215,7 @@ function ProgramSection() {
           </Reveal>
           <Reveal delay={120}>
             <p className="max-w-md text-pretty text-muted-foreground md:text-lg">
-              tudo que você precisa pra organizar e crescer — sem virar empresária da noite pro dia.
+              tudo que você precisa pra organizar e crescer, sem virar empresária da noite pro dia.
             </p>
           </Reveal>
         </div>
@@ -277,7 +277,7 @@ function ChefRuthSection() {
               <span className="text-brand">cada dificuldade</span> do caminho.
             </h2>
             <p className="mt-6 text-pretty text-lg text-muted-foreground">
-              A Chef Ruth é empreendedora, cozinheira e embaixadora do Impulso Stone. Ela viveu na pele os desafios de transformar talento em negócio — e hoje usa sua história para inspirar outras mulheres que vendem com as mãos.
+              A Chef Ruth é empreendedora, cozinheira e embaixadora do Impulso Stone. Ela viveu na pele os desafios de transformar talento em negócio. Hoje usa sua história para inspirar outras mulheres que vendem com as mãos.
             </p>
             <p className="mt-4 text-pretty text-muted-foreground">
               Essa parceria nasceu da crença de que quem já passou pelo caminho tem muito a ensinar. A Ruth traz autenticidade, experiência real e proximidade com quem está começando.
@@ -483,7 +483,7 @@ function Footer() {
     <footer className="border-t border-white/10 py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 md:flex-row md:px-8">
         <Logo />
-        <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Impulso Stone — feito pra quem faz com as mãos.</p>
+        <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Impulso Stone. feito pra quem faz com as mãos.</p>
       </div>
     </footer>
   );
