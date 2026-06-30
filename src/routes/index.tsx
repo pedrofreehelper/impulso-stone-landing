@@ -333,9 +333,9 @@ function PartnersSection() {
             parceiros do programa
           </p>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
-            <img src={rmmLogo} alt="Rede Muda Mundo" className="h-12 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0" />
-            <img src={ipLogo} alt="Instituto da Providência" className="h-12 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0" />
-            <img src={spmLogo} alt="SPM Rio de Janeiro" className="h-12 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0" />
+            <img src={rmmLogo} alt="Rede Muda Mundo" className="h-16 w-auto object-contain" />
+            <img src={ipLogo} alt="Instituto da Providência" className="h-16 w-auto object-contain" />
+            <img src={spmLogo} alt="SPM Rio de Janeiro" className="h-16 w-auto object-contain" />
           </div>
         </Reveal>
       </div>
@@ -423,7 +423,7 @@ function SocialProof() {
               <figure className="group flex h-full flex-col rounded-3xl border border-black/8 bg-surface p-8 transition hover:border-lime/40">
                 <figcaption className="mb-6 flex items-center gap-4">
                   {t.img ? (
-                    <img src={t.img} alt={t.name} className="h-20 w-20 shrink-0 rounded-2xl object-cover shadow-sm" />
+                    <img src={t.img} alt={t.name} className="h-20 w-20 shrink-0 rounded-2xl object-cover object-top shadow-sm" />
                   ) : (
                     <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-lime text-2xl font-bold text-[oklch(0.16_0.06_163)]">
                       {t.name.charAt(0)}
@@ -500,8 +500,8 @@ export default function Landing() {
       <ChefRuthSection />
       <TransformSection />
       <LeadCaptureSection />
-      <PartnersSection />
       <SocialProof />
+      <PartnersSection />
       <FinalCTA />
       <Footer />
     </main>
