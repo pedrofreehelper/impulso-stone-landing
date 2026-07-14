@@ -33,10 +33,13 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
+  --color-brand: var(--green-text);
   --color-lime: var(--lime);
   --color-lime-bright: var(--lime-bright);
   --color-green-deep: var(--green-deep);
   --color-lilac: var(--lilac);
+  --color-orange: var(--orange);
+  --color-forest: var(--forest);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
 
@@ -63,6 +66,8 @@
   --green-deep: oklch(0.87 0.12 128);       /* fundo lime claro seção CTA */
   --lilac: oklch(0.60 0.16 290);            /* roxo mais rico no claro */
   --green-text: oklch(0.32 0.13 155);       /* verde escuro pra texto em fundo claro */
+  --forest: oklch(0.40 0.09 158);           /* verde escuro profundo — card Ruth e botão final */
+  --orange: oklch(0.70 0.15 55);            /* laranja quente de apoio */
 
   --primary: var(--lime);
   --primary-foreground: oklch(0.15 0.06 163);
@@ -79,6 +84,8 @@
   --ring: var(--lime);
 
   --gradient-lime: linear-gradient(135deg, oklch(0.88 0.23 121) 0%, oklch(0.80 0.24 130) 100%);
+  --gradient-hero: linear-gradient(180deg, oklch(0.95 0.09 121) 0%, oklch(0.98 0.005 120) 90%);
+  --gradient-cta: linear-gradient(135deg, oklch(0.93 0.17 115) 0%, oklch(0.86 0.22 127) 100%);
   --gradient-deep: radial-gradient(120% 80% at 20% 0%, oklch(0.88 0.12 128 / 0.7) 0%, transparent 60%),
                     radial-gradient(80% 60% at 90% 100%, oklch(0.60 0.16 290 / 0.15) 0%, transparent 60%);
   --shadow-lime: 0 20px 60px -20px oklch(0.80 0.24 130 / 0.5);
@@ -118,12 +125,18 @@
   .text-brand { color: var(--green-text); }    /* verde escuro legível em fundo claro */
   .bg-lilac { background-color: var(--lilac); }
   .text-lilac { color: var(--lilac); }
+  .bg-orange { background-color: var(--orange); }
+  .text-orange { color: var(--orange); }
+  .bg-forest { background-color: var(--forest); }
+  .text-forest { color: var(--forest); }
   .bg-deep { background-color: var(--green-deep); }
   .bg-surface { background-color: var(--surface); }
   .bg-surface-2 { background-color: var(--surface-2); }
 
   .gradient-lime { background-image: var(--gradient-lime); }
   .gradient-deep { background-image: var(--gradient-deep); }
+  .gradient-hero { background-image: var(--gradient-hero); }
+  .gradient-cta { background-image: var(--gradient-cta); }
 
   .shadow-lime { box-shadow: var(--shadow-lime); }
   .shadow-soft { box-shadow: var(--shadow-soft); }
@@ -138,9 +151,9 @@
 
   .display {
     font-family: var(--font-display);
-    letter-spacing: -0.04em;
-    line-height: 0.95;
-    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+    font-weight: 800;
   }
 
   @keyframes float-slow {
