@@ -184,7 +184,7 @@ function Stories() {
       <div className="mx-auto max-w-6xl px-6 md:px-8">
         <Reveal>
           <h2 className="display text-balance text-center text-3xl text-foreground sm:text-4xl md:text-5xl">
-            quem já caminhou isso e deu certo
+            quem já fez esse caminho e deu certo
           </h2>
         </Reveal>
 
