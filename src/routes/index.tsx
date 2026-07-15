@@ -202,10 +202,14 @@ function Stories() {
                 </span>
                 <h3 className="display mt-4 text-4xl text-white md:text-5xl">Chef Ruth</h3>
                 <p className="mt-5 text-pretty text-white/75 md:text-lg">
-                  confeiteira, empreendedora e mentora. a Ruth viveu na pele os
-                  desafios de transformar talento em negócio rentável. hoje ela
-                  ajuda mulheres como você a passar por esse caminho com
-                  segurança e apoio.
+                  De ex quebradeira de coco no Maranhão a renomada Chef de
+                  Cozinha! Ruth aprendeu a cozinhar com sua mãe no fogão a
+                  lenha e extraiu os segredos e as perfeitas combinações de
+                  ingredientes regionais e exóticos. Hoje, é proprietária do
+                  restaurante Raízes Gastronômicas que valoriza os produtos
+                  típicos do Tocantins e os produtores locais e possui o
+                  prêmio Dòlmã de melhor chef do Tocantins na categoria
+                  estadual.
                 </p>
                 <blockquote className="mt-6 text-pretty text-lg font-medium italic text-lime md:text-xl">
                   "aprendi a organizar e dirigir meu negócio de forma segura.
