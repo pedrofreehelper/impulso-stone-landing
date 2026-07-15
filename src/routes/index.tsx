@@ -210,10 +210,10 @@ function Stories() {
                   produtos típicos do Tocantins e os produtores locais, e
                   venceu o prêmio Dólmã de melhor chef do estado.
                 </p>
-                <blockquote className="mt-6 text-pretty text-lg font-medium italic text-lime md:text-xl">
-                  "aprendi a organizar e dirigir meu negócio de forma segura.
-                  agora quero que você sinta isso também."
-                </blockquote>
+                <p className="mt-6 text-pretty text-lg font-semibold text-lime md:text-xl">
+                  aprenda a organizar e dirigir seu negócio de forma segura,
+                  assim como a Chef Ruth.
+                </p>
               </div>
             </div>
           </div>
